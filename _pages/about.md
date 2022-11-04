@@ -8,7 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am a research associate in the [Materials Design Group](https://wmd-group.github.io/) at Imperial College London. I’m originally from China and studied chemistry at Shandong University (2008-2012). Afterwards, I moved to Peking University to pursue my PhD degree focusing on the electronic properties of graphene and other 2D materials (2012-2017). I developed my skills as a computational theorist in solid state materials during this period, regarding their band structures, transport properties and optical properties. At the year of my graduation in PhD, I was motivated with a passion for materials design with machine learning. I started to develop my skills in materials related software engineering and data science, and I now work on projects to enable research on sustainable energy materials by ab inito computational methods and machine learning accelerated predictions, in order to embrace the accelerated shifting of research paradigm driven by the fast developement of algorithms and upgrading hardwares for example from CPUs to GPUs.  
+I am a research associate in the [Materials Design Group](https://wmd-group.github.io/) at Imperial College London. I’m originally from China and studied chemistry at Shandong University (2008-2012). Afterwards, I moved to Peking University to pursue my PhD degree focusing on the electronic properties of graphene and other 2D materials (2012-2017). 
+
+
+I developed my skills as a computational theorist in solid state materials during this period, regarding their band structures, transport properties and optical properties. At the year of my graduation in PhD, I was motivated with a passion for materials design with machine learning. I started to develop my skills in materials related software engineering and data science, and I now work on projects to enable research on sustainable energy materials by ab inito computational methods and machine learning accelerated predictions, in order to embrace the accelerated shifting of research paradigm driven by the fast developement of algorithms and upgrading hardwares for example from CPUs to GPUs.  
 
 
 
