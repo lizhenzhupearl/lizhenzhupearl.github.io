@@ -11,21 +11,21 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Physical Chemistry, Peking University, 2012-2017
+* Ph.D visiting student, Massachusetts Institute of Technology, 2016
+* B.S. Shandong University, 2008-2012
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2020-present: Research associate 
+  * Imperial college london
+  * Duties included: Modelling
+  * Supervisor: Aron Walsh
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2017-2020: PosDoc
+  * Soochow University
+  * Duties included: Machine learning for halide perovskite materials design
+  * Supervisor: Wan-jian Yin
   
 Skills
 ======
