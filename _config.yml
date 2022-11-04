@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Zhenzhu Li"
-  avatar           : "profile.png"
+  avatar           : "images/profile.png"
   bio              : "Research associate at Imperial College London"
   location         : "London, UK"
   employer         :
