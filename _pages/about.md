@@ -3,46 +3,37 @@ permalink: /
 title: "About me"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a research associate in the [Materials Design Group](https://wmd-group.github.io/) at Imperial College London. I’m originally from China and studied chemistry at Shandong University (2008-2012). Afterwards, I moved to Peking University to pursue my PhD degree focusing on the electronic properties of graphene and other 2D materials (2012-2017). I developed my skills as a computational theorist in solid state materials during this period, regarding their band structures, transport properties and optical properties. At the year of my graduation in PhD, I was motivated with a passion for materials design with machine learning. 
+I am an **AI in Science Fellow** ([Schmidt Sciences](https://www.schmidtsciences.org/) funded) based at [Imperial College London](https://www.imperial.ac.uk/) in the [Materials Design Group](https://wmd-group.github.io/). My research focuses on **computational modelling of solar energy materials with the aid of implementing artificial intelligence techniques**.
 
-I started to develop my skills in materials related software engineering and data science, and I now work on projects to enable research on sustainable energy materials by ab inito computational methods and machine learning accelerated predictions, in order to embrace the accelerated shifting of research paradigm driven by the fast developement of algorithms and upgrading hardwares for example from CPUs to GPUs.  
+I have a strong interdisciplinary background in chemistry, materials, and machine learning. I work on solar energy materials including their defect properties, growth conditions, and recombination-limited photovoltaic properties. I have published 37+ peer-reviewed papers in high-profile journals including *Nature Communications*, *Chemical Science*, *Advanced Functional Materials*, *Energy Storage Materials*, *Nano Letters*, and *Nano Research*, and have developed 3 computational packages on GitHub for materials simulation.
 
-
-Research 
+Education
 ======
+- **Ph.D.** in Physical Chemistry, Peking University, China (2012-2017)
+- **Visiting Ph.D. Student**, Research Laboratory of Electronics, MIT, USA (2016)
+- **B.S.** in Chemistry, Shandong University, China (2008-2012)
 
-just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-Talks
+Research Interests
 ======
+My research combines **first-principles calculations** and **machine learning** to accelerate the discovery and understanding of energy materials:
 
+- **Perovskite Solar Cells**: Investigating polytypism, defect distributions, and phase stability in halide and chalcogenide perovskites
+- **Machine Learning for Materials**: High-throughput screening, generative models, and foundation models for materials discovery
+- **2D Materials**: Electronic properties, carrier transport, and strain effects in graphene and related materials
+- **AI for Science**: Large language models for materials science, interpretability of ML models
 
-
-Teaching and Supervising
+Software
 ======
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+- [Polytype](https://github.com/WMD-group/polytype): Perovskite polytypes predictions
+- [ChalcogenideGrowth](https://github.com/WMD-group/ChalcogenideGrowth): Chalcogenide perovskite growth modelling
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Selected Awards
+======
+- AI for Science Postdoctoral Fellowship, Imperial College London (2023)
+- ICAMD2021 Young Researcher Award & Best Oral Presentation Prize (2021)
+- HORIBA Scientific Scholarship, Peking University (2014)

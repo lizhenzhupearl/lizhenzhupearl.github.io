@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ZHENZHU LI"
+title                    : "Dr. Zhenzhu Li"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Dr. Zhenzhu Li"
+description              : &description "AI in Science Fellow at Imperial College London. Research on computational modelling of solar energy materials with AI techniques."
 url                      : https://lizhenzhupearl.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lizhenzhupearl/lizhenzhupearl.github.io"
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dr Zhenzhu Li"
+  name             : "Dr. Zhenzhu Li"
   avatar           : "profile.png"
-  bio              : "Research associate at Imperial College London"
+  bio              : "AI in Science Fellow (Schmidt Sciences) at Imperial College London"
   location         : "London, UK"
-  employer         :
-  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  employer         : "Imperial College London"
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=zO1h0pQAAAAJ&hl=en"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  email            : "zhenzhu.li@imperial.ac.uk"
+  researchgate     : "https://www.researchgate.net/profile/Zhenzhu-Li"
   uri              :
   bitbucket        :
   codepen          :
@@ -100,13 +100,13 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      :
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "zhenzhu-li-4513a14a"
+  orcid            : "https://orcid.org/0000-0002-6669-563X"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
   twitter          : "Zhenzhu__Li"
