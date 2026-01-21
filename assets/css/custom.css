@@ -1,0 +1,151 @@
+/* Custom Technical/Coding Theme Styles */
+
+/* Terminal-style cursor blink effect for headers */
+.page__title::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+  color: #3fb950;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Code-style section headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #58a6ff;
+  font-weight: 500;
+}
+
+h2::before {
+  content: "## ";
+  color: #8b949e;
+}
+
+/* Terminal prompt style for list items */
+.page__content ul > li::marker {
+  color: #3fb950;
+}
+
+.page__content ol > li::marker {
+  color: #d29922;
+  font-weight: 600;
+}
+
+/* Author sidebar styling */
+.author__name {
+  color: #58a6ff;
+}
+
+.author__bio {
+  color: #8b949e;
+  font-style: normal;
+}
+
+/* Links with syntax highlight colors */
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #3fb950;
+}
+
+/* Card-style archive items */
+.archive__item {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.archive__item:hover {
+  border-color: #58a6ff;
+}
+
+.archive__item-title {
+  color: #58a6ff;
+}
+
+/* Navigation masthead */
+.masthead {
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+/* Footer styling */
+.page__footer {
+  background: #0d1117;
+  border-top: 1px solid #30363d;
+  color: #8b949e;
+}
+
+/* Scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Selection highlighting */
+::selection {
+  background: #264f78;
+  color: #ffffff;
+}
+
+/* Author avatar border */
+.author__avatar img {
+  border: 2px solid #30363d;
+  border-radius: 50%;
+}
+
+/* Social icons */
+.social-icons .fa,
+.social-icons .fab,
+.social-icons .fas,
+.social-icons .ai {
+  color: #8b949e;
+}
+
+.social-icons a:hover .fa,
+.social-icons a:hover .fab,
+.social-icons a:hover .fas,
+.social-icons a:hover .ai {
+  color: #58a6ff;
+}
+
+/* Button styling */
+.btn {
+  background: #21262d;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+}
+
+.btn:hover {
+  background: #30363d;
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+
+/* Input fields */
+input, textarea, select {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #58a6ff;
+  outline: none;
+}
