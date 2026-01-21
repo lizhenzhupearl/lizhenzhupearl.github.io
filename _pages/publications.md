@@ -5,12 +5,21 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
+You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=zO1h0pQAAAAJ&hl=en).
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
+{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+{% assign pub_count = sorted_pubs | size %}
+
+<ol reversed>
+{% for post in sorted_pubs %}
+  <li>
+    <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
+    <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
+    {% if post.paperurl %}
+    [<a href="{{ post.paperurl }}">Paper</a>]
+    {% endif %}
+  </li>
 {% endfor %}
+</ol>

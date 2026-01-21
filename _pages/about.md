@@ -29,6 +29,8 @@ My research combines **first-principles calculations** and **machine learning** 
 
 Software
 ======
+- [PlatonicRep](https://github.com/lizhenzhupearl/PlatonicRep): Platonic representation analysis of ML interatomic potentials
+- [NH3SOFC](https://lizhenzhupearl.github.io/nh3sofc/): Ammonia solid oxide fuel cell simulation toolkit
 - [Polytype](https://github.com/WMD-group/polytype): Perovskite polytypes predictions
 - [ChalcogenideGrowth](https://github.com/WMD-group/ChalcogenideGrowth): Chalcogenide perovskite growth modelling
 
