@@ -10,7 +10,7 @@ redirect_from:
 
 I am an **AI in Science Fellow** ([Schmidt Sciences](https://www.schmidtsciences.org/) funded) based at [Imperial College London](https://www.imperial.ac.uk/) in the [Materials Design Group](https://wmd-group.github.io/). My research focuses on **computational modelling of solar energy materials with the aid of implementing artificial intelligence techniques**.
 
-I have a strong interdisciplinary background in chemistry, materials, and machine learning. I work on solar energy materials including their defect properties, growth conditions, and recombination-limited photovoltaic properties. I have published 37+ peer-reviewed papers in high-profile journals including *Nature Communications*, *Chemical Science*, *Advanced Functional Materials*, *Energy Storage Materials*, *Nano Letters*, and *Nano Research*, and have developed 3 computational packages on GitHub for materials simulation.
+I have a strong interdisciplinary background in chemistry, materials, and machine learning. I work on solar energy materials including their defect properties, growth conditions, and recombination-limited photovoltaic properties. I have published 40+ peer-reviewed papers in high-profile journals including *Nature Communications*, *Chemical Science*, *Advanced Functional Materials*, *Energy Storage Materials*, *Nano Letters*, and *Nano Research*, and have developed 3 computational packages on GitHub for materials simulation.
 
 Education
 ======
