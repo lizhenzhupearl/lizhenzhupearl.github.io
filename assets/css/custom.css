@@ -17,10 +17,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-.page__content h2::before {
-  content: "## ";
-  color: #8b949e;
-}
 
 /* Terminal prompt style for list items */
 .page__content ul > li::marker {
