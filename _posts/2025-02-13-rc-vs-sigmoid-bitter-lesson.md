@@ -2,6 +2,7 @@
 title: "RC Gate or Sigmoid Gate — Which Would You Choose to Train a Transformer?"
 date: 2025-02-13
 permalink: /posts/2025/02/rc-vs-sigmoid-bitter-lesson/
+excerpt: "A story about a beautiful idea that didn't work, and what I learned from killing it."
 tags:
   - machine learning
   - transformers
@@ -10,7 +11,7 @@ tags:
 
 *A story about a beautiful idea that didn't work, and what I learned from killing it.*
 
-*I am not expert in transformer at all, so if I am wrong, please let me know, I need to learn more!
+*I am not expert in transformer at all, so if I am wrong, please let me know, I need to learn more!*
 
 ---
 
@@ -24,7 +25,7 @@ Imagine you're in a machine learning interview. The interviewer draws two functi
 
 "Both produce values between 0 and 1," they say. "Both can gate a residual stream in a transformer — multiplying a layer's output before it's added back. Which one would you use, and why?"
 
-If you'd asked me 1 months ago, I would have given a passionate answer about why the RC gate is better. I had a whole theory. I called the project *MyelinFormer*. It was inspired by neuroscience. It was elegant.
+If you'd asked me 1 month ago, I would have given a passionate answer about why the RC gate is better. I had a whole theory. I called the project *MyelinFormer*. It was inspired by neuroscience. It was elegant.
 
 It was wrong.
 
@@ -36,11 +37,11 @@ This is the story of how I found out.
 
 In the brain, myelin is a fatty sheath that wraps around axons. Heavily myelinated pathways conduct signals fast and efficiently — think of a pianist's motor circuits after years of practice. Unmyelinated pathways are slow but flexible — they can still learn, still adapt.
 
-The RC circuit (resistor-capacitor circuit) is the standard physics model for how electrical signals propagate through myelinated axons. The time constant τ controls everything: high τ means thick myelin, fast conduction, established pathways. Low τ means thin myelin, slow conduction, still-learning pathways.
+The RC circuit (resistor-capacitor circuit) is the standard physics model for how electrical signals propagate through myelinated axons. The time constant τ controls everything: low τ means thick myelin, fast conduction, established pathways. High τ means thin myelin, slow conduction, still-learning pathways.
 
-So I thought: what if we use RC circuits as gates in a transformer? Instead of a sigmoid deciding how much of each layer's output to keep, we'd have τ — a learnable time constant — controlling the flow. Layers with high τ would become "myelinated": efficient, fast, committed. Layers with low τ would stay "plastic": still learning, still adapting.
+So I thought: what if we use RC circuits as gates in a transformer? Instead of a sigmoid deciding how much of each layer's output to keep, we'd have τ — a learnable time constant — controlling the flow. Layers with low τ would become "myelinated": efficient, fast, committed. Layers with high τ would stay "plastic": still learning, still adapting.
 
-The gate function `g = 1 − exp(−1/τ)` maps directly from RC circuit physics. When τ is large, g approaches 1 (full signal). When τ is small, g approaches 0 (signal suppressed). The biology-to-math translation was clean. I was excited.
+The gate function `g = 1 − exp(−1/τ)` maps directly from RC circuit physics. When τ is small, g approaches 1 (full signal). When τ is large, g approaches 0 (signal suppressed). The biology-to-math translation was clean. I was excited.
 
 ---
 
@@ -68,7 +69,7 @@ I did the math on gradient flow through each gate. The RC gate composes two satu
 
 For a sigmoid gate at g ≈ 0.05, the gradient ∂g/∂logit = g(1−g) ≈ 0.0475. That's healthy. The gate can still move.
 
-For an RC gate at g ≈ 0.05, you need τ ≈ 19.5, and the gradient ∂g/∂τ = exp(−1/τ)/τ² is tiny. The gate is stuck.
+For an RC gate at g ≈ 0.05, you need τ ≈ 19.5, and the gradient ∂g/∂τ = −exp(−1/τ)/τ² is tiny in magnitude. The gate is stuck.
 
 I measured per-token routing precision: how much does the gate value change between easy and hard inputs for the same layer? Sigmoid showed 41.7× dynamic range. RC was far less discriminating — it was suppressing everything about equally, not making sharp per-token decisions.
 
