@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.lizhenzhupearl.twa",
+        "sha256_cert_fingerprints": ["A3:37:2A:33:6F:A1:F1:41:61:23:8B:3B:3B:5A:B6:53:8C:DC:2D:B1:8B:78:02:1B:61:13:41:0F:B9:BF:52:DF"]
+      }
+    }]
